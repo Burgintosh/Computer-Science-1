@@ -7,11 +7,10 @@ int main () {
     if(var1 < 255) {
         std::cout << char(var1);
     }
+    else if (var1 - 255 < 255)
+    {
+        std::cout << char(var1);
+    }
     else
-        var1 = var1 - 255;
-        if(var1 < 255) {
-            std::cout << char(var1);
-        }
-        else
         std::cout << "value too large.";
 }
