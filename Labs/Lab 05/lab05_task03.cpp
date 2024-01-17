@@ -2,13 +2,13 @@
 using std::cout;
 using std::endl;
 
-void mult(int& input) {
-    input *= 2;
+int fact(int n) {
+    if(n == 0)   return 1;
+    else return n * fact(n-1);
 }
 
 int main() {
     int i = 7;
     cout << i << endl; // Prints 7
-    mult(i);
-    cout << i << endl; // Prints 14
+    cout << fact(i) << endl; // Prints 5040
 }

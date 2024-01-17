@@ -1,5 +1,6 @@
 #include <iostream>
-using namespace std;
+using std::cout;
+using std::endl;
 
 int main() {
     int a = 0; int b = a++; int c = ++b; int d = 2;
